@@ -1,0 +1,574 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 49.18      1.79     1.79    18432     0.10     0.10  discrete_fourier_transform
+ 27.48      2.79     1.00                             fourier_filter
+ 18.68      3.47     0.68       63    10.80    11.11  encodeLZ77
+  1.37      3.52     0.05        2    25.00    52.77  zlib_compress
+  0.82      3.55     0.03 12625064     0.00     0.00  alloc1df
+  0.55      3.57     0.02    12301     0.00     0.00  alloc2df
+  0.27      3.58     0.01  1036118     0.00     0.00  uivector_push_back
+  0.27      3.59     0.01   637756     0.00     0.00  string_set
+  0.27      3.60     0.01      434     0.02     0.53  addBitsToStreamReversed
+  0.27      3.61     0.01        1    10.00    31.11  generateFixedDistanceTree
+  0.27      3.62     0.01        1    10.00    10.00  unfilter
+  0.27      3.63     0.01                             ppm_to_png
+  0.14      3.64     0.01  2955746     0.00     0.00  getHash
+  0.14      3.64     0.01   469498     0.00     0.00  searchCodeIndex
+  0.00      3.64     0.00   945593     0.00     0.00  ucvector_push_back
+  0.00      3.64     0.00   469693     0.00     0.00  addBitsToStream
+  0.00      3.64     0.00    16625     0.00     0.00  lodepng_color_mode_equal
+  0.00      3.64     0.00     5400     0.00     0.00  filterScanline
+  0.00      3.64     0.00      465     0.00     0.00  color_tree_get
+  0.00      3.64     0.00      465     0.00     0.00  getPixelColorRGBA8
+  0.00      3.64     0.00      344     0.00     0.00  cleanup_coins
+  0.00      3.64     0.00      296     0.00     0.00  append_symbol_coins
+  0.00      3.64     0.00      257     0.00     0.00  color_tree_add
+  0.00      3.64     0.00      240     0.00     0.00  uivector_resizev.constprop.23
+  0.00      3.64     0.00      108     0.00     0.00  HuffmanTree_cleanup
+  0.00      3.64     0.00      108     0.00     0.00  HuffmanTree_makeFromLengths2
+  0.00      3.64     0.00      103     0.00     0.00  lodepng_chunk_type_equals
+  0.00      3.64     0.00       84     0.00     0.00  HuffmanTree_makeFromLengths
+  0.00      3.64     0.00       81     0.00     0.00  lodepng_chunk_check_crc
+  0.00      3.64     0.00       24     0.00     0.01  HuffmanTree_makeFromFrequencies
+  0.00      3.64     0.00       24     0.00     0.01  lodepng_huffman_code_lengths
+  0.00      3.64     0.00       10     0.00     5.00  alloc3df
+  0.00      3.64     0.00        6     0.00     0.00  dealloc2df
+  0.00      3.64     0.00        5     0.00     0.00  LodePNGIText_cleanup
+  0.00      3.64     0.00        5     0.00     0.00  LodePNGText_cleanup
+  0.00      3.64     0.00        5     0.00     0.00  lodepng_info_cleanup
+  0.00      3.64     0.00        4     0.00     0.00  lodepng_info_init
+  0.00      3.64     0.00        3     0.00     0.00  addUnknownChunks
+  0.00      3.64     0.00        3     0.00     0.00  checkColorValidity
+  0.00      3.64     0.00        3     0.00     3.70  lodepng_add32bitInt
+  0.00      3.64     0.00        3     0.00     0.00  lodepng_chunk_create
+  0.00      3.64     0.00        3     0.00     0.00  lodepng_chunk_generate_crc
+  0.00      3.64     0.00        2     0.00    14.99  alloc4df
+  0.00      3.64     0.00        2     0.00     0.00  lodepng_state_cleanup
+  0.00      3.64     0.00        2     0.00     0.00  lodepng_state_init
+  0.00      3.64     0.00        2     0.00     0.00  update_adler32.constprop.21
+  0.00      3.64     0.00        1     0.00     0.00  color_tree_cleanup
+  0.00      3.64     0.00        1     0.00   129.98  decodeGeneric
+  0.00      3.64     0.00        1     0.00     0.00  getPixelColorsRGBA8
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_auto_choose_color
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_can_have_alpha
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_color_mode_copy
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_convert
+  0.00      3.64     0.00        1     0.00   129.98  lodepng_decode
+  0.00      3.64     0.00        1     0.00   129.98  lodepng_decode_memory
+  0.00      3.64     0.00        1     0.00   321.30  lodepng_deflate
+  0.00      3.64     0.00        1     0.00   660.12  lodepng_encode
+  0.00      3.64     0.00        1     0.00   660.12  lodepng_encode_memory
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_info_copy
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_inspect
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_load_file
+  0.00      3.64     0.00        1     0.00     0.00  lodepng_save_file
+  0.00      3.64     0.00        1     0.00   547.16  lodepng_zlib_compress
+  0.00      3.64     0.00        1     0.00    31.11  lodepng_zlib_decompress
+  0.00      3.64     0.00        1     0.00    52.77  preProcessScanlines
+  0.00      3.64     0.00        1     0.00     0.00  zlib_decompress
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.27% of 3.64 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     77.9    1.00    1.84                 fourier_filter [1]
+                1.79    0.00   18432/18432       discrete_fourier_transform [2]
+                0.00    0.03       2/2           alloc4df [23]
+                0.00    0.01       3/10          alloc3df [19]
+                0.00    0.00   18432/12625064     alloc1df [22]
+                0.00    0.00       1/12301       alloc2df [18]
+-----------------------------------------------
+                1.79    0.00   18432/18432       fourier_filter [1]
+[2]     49.2    1.79    0.00   18432         discrete_fourier_transform [2]
+-----------------------------------------------
+                0.01    0.00       1/63          lodepng_add32bitInt [24]
+                0.01    0.00       1/63          generateFixedDistanceTree [20]
+                0.05    0.00       5/63          zlib_compress [15]
+                0.09    0.00       8/63          lodepng_deflate [9]
+                0.09    0.00       8/63          decodeGeneric [11]
+                0.43    0.01      40/63          ucvector_push_back [8]
+[3]     19.2    0.68    0.02      63         encodeLZ77 [3]
+                0.01    0.00 1008542/1036118     uivector_push_back [25]
+                0.01    0.00 2955746/2955746     getHash [29]
+                0.01    0.00  469498/469498      searchCodeIndex [30]
+-----------------------------------------------
+                0.00    0.66       1/1           lodepng_encode_memory [5]
+[4]     18.1    0.00    0.66       1         lodepng_encode [4]
+                0.00    0.55       1/1           lodepng_zlib_compress [7]
+                0.00    0.05       1/1           preProcessScanlines [17]
+                0.03    0.03       1/2           zlib_compress [15]
+                0.00    0.01       2/3           lodepng_add32bitInt [24]
+                0.00    0.00      13/945593      ucvector_push_back [8]
+                0.00    0.00       3/3           lodepng_chunk_create [54]
+                0.00    0.00       3/3           addUnknownChunks [52]
+                0.00    0.00       2/3           checkColorValidity [53]
+                0.00    0.00       1/4           lodepng_info_init [51]
+                0.00    0.00       1/1           lodepng_info_copy [65]
+                0.00    0.00       1/1           lodepng_auto_choose_color [61]
+                0.00    0.00       1/16625       lodepng_color_mode_equal [35]
+                0.00    0.00       1/5           lodepng_info_cleanup [50]
+-----------------------------------------------
+                0.00    0.66       1/1           lodepng_encode_file [6]
+[5]     18.1    0.00    0.66       1         lodepng_encode_memory [5]
+                0.00    0.66       1/1           lodepng_encode [4]
+                0.00    0.00       1/2           lodepng_state_init [57]
+                0.00    0.00       1/5           lodepng_info_cleanup [50]
+                0.00    0.00       1/2           lodepng_state_cleanup [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]     18.1    0.00    0.66                 lodepng_encode_file [6]
+                0.00    0.66       1/1           lodepng_encode_memory [5]
+                0.00    0.00       1/1           lodepng_save_file [68]
+-----------------------------------------------
+                0.00    0.55       1/1           lodepng_encode [4]
+[7]     15.0    0.00    0.55       1         lodepng_zlib_compress [7]
+                0.00    0.32       1/1           lodepng_deflate [9]
+                0.00    0.22  472791/945593      ucvector_push_back [8]
+                0.00    0.00       1/3           lodepng_add32bitInt [24]
+                0.00    0.00       1/2           update_adler32.constprop.21 [58]
+-----------------------------------------------
+                0.00    0.00       3/945593      lodepng_deflate [9]
+                0.00    0.00      13/945593      lodepng_encode [4]
+                0.00    0.09  195350/945593      addBitsToStream [16]
+                0.00    0.13  277436/945593      addBitsToStreamReversed [10]
+                0.00    0.22  472791/945593      lodepng_zlib_compress [7]
+[8]     12.2    0.00    0.44  945593         ucvector_push_back [8]
+                0.43    0.01      40/63          encodeLZ77 [3]
+-----------------------------------------------
+                0.00    0.32       1/1           lodepng_zlib_compress [7]
+[9]      8.8    0.00    0.32       1         lodepng_deflate [9]
+                0.01    0.22     434/434         addBitsToStreamReversed [10]
+                0.09    0.00       8/63          encodeLZ77 [3]
+                0.00    0.00      24/24          HuffmanTree_makeFromFrequencies [32]
+                0.00    0.00     195/469693      addBitsToStream [16]
+                0.00    0.00    2869/1036118     uivector_push_back [25]
+                0.00    0.00       3/945593      ucvector_push_back [8]
+                0.00    0.00      24/240         uivector_resizev.constprop.23 [41]
+                0.00    0.00      24/108         HuffmanTree_cleanup [42]
+                0.00    0.00      24/108         HuffmanTree_makeFromLengths2 [43]
+                0.00    0.00       8/16625       lodepng_color_mode_equal [35]
+-----------------------------------------------
+                              539044             addBitsToStreamReversed [10]
+                0.01    0.22     434/434         lodepng_deflate [9]
+[10]     6.4    0.01    0.22     434+539044  addBitsToStreamReversed [10]
+                0.00    0.13  277436/945593      ucvector_push_back [8]
+                0.00    0.09  469498/469693      addBitsToStream [16]
+                              539044             addBitsToStreamReversed [10]
+-----------------------------------------------
+                0.00    0.13       1/1           lodepng_decode [12]
+[11]     3.6    0.00    0.13       1         decodeGeneric [11]
+                0.09    0.00       8/63          encodeLZ77 [3]
+                0.00    0.03       1/1           lodepng_zlib_decompress [21]
+                0.01    0.00       1/1           unfilter [27]
+                0.00    0.00     103/103         lodepng_chunk_type_equals [44]
+                0.00    0.00      81/81          lodepng_chunk_check_crc [46]
+                0.00    0.00       1/1           lodepng_inspect [66]
+                0.00    0.00       1/1           zlib_decompress [69]
+-----------------------------------------------
+                0.00    0.13       1/1           lodepng_decode_memory [13]
+[12]     3.6    0.00    0.13       1         lodepng_decode [12]
+                0.00    0.13       1/1           decodeGeneric [11]
+                0.00    0.00       1/16625       lodepng_color_mode_equal [35]
+                0.00    0.00       1/1           lodepng_convert [64]
+-----------------------------------------------
+                0.00    0.13       1/1           lodepng_decode_file [14]
+[13]     3.6    0.00    0.13       1         lodepng_decode_memory [13]
+                0.00    0.13       1/1           lodepng_decode [12]
+                0.00    0.00       1/2           lodepng_state_init [57]
+                0.00    0.00       1/5           lodepng_info_cleanup [50]
+                0.00    0.00       1/2           lodepng_state_cleanup [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     3.6    0.00    0.13                 lodepng_decode_file [14]
+                0.00    0.13       1/1           lodepng_decode_memory [13]
+                0.00    0.00       1/1           lodepng_load_file [67]
+-----------------------------------------------
+                0.03    0.03       1/2           preProcessScanlines [17]
+                0.03    0.03       1/2           lodepng_encode [4]
+[15]     2.9    0.05    0.06       2         zlib_compress [15]
+                0.05    0.00       5/63          encodeLZ77 [3]
+                0.00    0.00    5400/5400        filterScanline [36]
+-----------------------------------------------
+                0.00    0.00     195/469693      lodepng_deflate [9]
+                0.00    0.09  469498/469693      addBitsToStreamReversed [10]
+[16]     2.5    0.00    0.09  469693         addBitsToStream [16]
+                0.00    0.09  195350/945593      ucvector_push_back [8]
+-----------------------------------------------
+                0.00    0.05       1/1           lodepng_encode [4]
+[17]     1.4    0.00    0.05       1         preProcessScanlines [17]
+                0.03    0.03       1/2           zlib_compress [15]
+-----------------------------------------------
+                0.00    0.00       1/12301       fourier_filter [1]
+                0.02    0.03   12300/12301       alloc3df [19]
+[18]     1.4    0.02    0.03   12301         alloc2df [18]
+                0.03    0.00 12606632/12625064     alloc1df [22]
+-----------------------------------------------
+                0.00    0.00       1/10          png_to_ppm [31]
+                0.00    0.01       3/10          fourier_filter [1]
+                0.00    0.03       6/10          alloc4df [23]
+[19]     1.4    0.00    0.05      10         alloc3df [19]
+                0.02    0.03   12300/12301       alloc2df [18]
+-----------------------------------------------
+                0.01    0.02       1/1           lodepng_zlib_decompress [21]
+[20]     0.9    0.01    0.02       1         generateFixedDistanceTree [20]
+                0.01    0.00       1/63          encodeLZ77 [3]
+                0.01    0.00  637756/637756      string_set [26]
+                0.00    0.00      84/108         HuffmanTree_cleanup [42]
+                0.00    0.00      84/108         HuffmanTree_makeFromLengths2 [43]
+                0.00    0.00      84/84          HuffmanTree_makeFromLengths [45]
+-----------------------------------------------
+                0.00    0.03       1/1           decodeGeneric [11]
+[21]     0.9    0.00    0.03       1         lodepng_zlib_decompress [21]
+                0.01    0.02       1/1           generateFixedDistanceTree [20]
+                0.00    0.00       1/2           update_adler32.constprop.21 [58]
+-----------------------------------------------
+                0.00    0.00   18432/12625064     fourier_filter [1]
+                0.03    0.00 12606632/12625064     alloc2df [18]
+[22]     0.8    0.03    0.00 12625064         alloc1df [22]
+-----------------------------------------------
+                0.00    0.03       2/2           fourier_filter [1]
+[23]     0.8    0.00    0.03       2         alloc4df [23]
+                0.00    0.03       6/10          alloc3df [19]
+-----------------------------------------------
+                0.00    0.00       1/3           lodepng_zlib_compress [7]
+                0.00    0.01       2/3           lodepng_encode [4]
+[24]     0.3    0.00    0.01       3         lodepng_add32bitInt [24]
+                0.01    0.00       1/63          encodeLZ77 [3]
+-----------------------------------------------
+                0.00    0.00    2869/1036118     lodepng_deflate [9]
+                0.00    0.00    7163/1036118     append_symbol_coins [34]
+                0.00    0.00   17544/1036118     lodepng_huffman_code_lengths [33]
+                0.01    0.00 1008542/1036118     encodeLZ77 [3]
+[25]     0.3    0.01    0.00 1036118         uivector_push_back [25]
+                0.00    0.00    9946/16625       lodepng_color_mode_equal [35]
+-----------------------------------------------
+                0.01    0.00  637756/637756      generateFixedDistanceTree [20]
+[26]     0.3    0.01    0.00  637756         string_set [26]
+-----------------------------------------------
+                0.01    0.00       1/1           decodeGeneric [11]
+[27]     0.3    0.01    0.00       1         unfilter [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.3    0.01    0.00                 ppm_to_png [28]
+-----------------------------------------------
+                0.01    0.00 2955746/2955746     encodeLZ77 [3]
+[29]     0.1    0.01    0.00 2955746         getHash [29]
+-----------------------------------------------
+                0.01    0.00  469498/469498      encodeLZ77 [3]
+[30]     0.1    0.01    0.00  469498         searchCodeIndex [30]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     0.1    0.00    0.00                 png_to_ppm [31]
+                0.00    0.00       1/10          alloc3df [19]
+-----------------------------------------------
+                0.00    0.00      24/24          lodepng_deflate [9]
+[32]     0.0    0.00    0.00      24         HuffmanTree_makeFromFrequencies [32]
+                0.00    0.00      24/24          lodepng_huffman_code_lengths [33]
+-----------------------------------------------
+                0.00    0.00      24/24          HuffmanTree_makeFromFrequencies [32]
+[33]     0.0    0.00    0.00      24         lodepng_huffman_code_lengths [33]
+                0.00    0.00   17544/1036118     uivector_push_back [25]
+                0.00    0.00     296/296         append_symbol_coins [34]
+                0.00    0.00    6428/16625       lodepng_color_mode_equal [35]
+                0.00    0.00     344/344         cleanup_coins [39]
+-----------------------------------------------
+                0.00    0.00     296/296         lodepng_huffman_code_lengths [33]
+[34]     0.0    0.00    0.00     296         append_symbol_coins [34]
+                0.00    0.00    7163/1036118     uivector_push_back [25]
+-----------------------------------------------
+                0.00    0.00       1/16625       lodepng_convert [64]
+                0.00    0.00       1/16625       lodepng_decode [12]
+                0.00    0.00       1/16625       lodepng_encode [4]
+                0.00    0.00       8/16625       lodepng_deflate [9]
+                0.00    0.00     240/16625       uivector_resizev.constprop.23 [41]
+                0.00    0.00    6428/16625       lodepng_huffman_code_lengths [33]
+                0.00    0.00    9946/16625       uivector_push_back [25]
+[35]     0.0    0.00    0.00   16625         lodepng_color_mode_equal [35]
+-----------------------------------------------
+                0.00    0.00    5400/5400        zlib_compress [15]
+[36]     0.0    0.00    0.00    5400         filterScanline [36]
+-----------------------------------------------
+                0.00    0.00     465/465         lodepng_auto_choose_color [61]
+[37]     0.0    0.00    0.00     465         color_tree_get [37]
+-----------------------------------------------
+                0.00    0.00     465/465         lodepng_auto_choose_color [61]
+[38]     0.0    0.00    0.00     465         getPixelColorRGBA8 [38]
+-----------------------------------------------
+                0.00    0.00     344/344         lodepng_huffman_code_lengths [33]
+[39]     0.0    0.00    0.00     344         cleanup_coins [39]
+-----------------------------------------------
+                0.00    0.00     257/257         lodepng_auto_choose_color [61]
+[40]     0.0    0.00    0.00     257         color_tree_add [40]
+-----------------------------------------------
+                0.00    0.00      24/240         lodepng_deflate [9]
+                0.00    0.00     216/240         HuffmanTree_makeFromLengths2 [43]
+[41]     0.0    0.00    0.00     240         uivector_resizev.constprop.23 [41]
+                0.00    0.00     240/16625       lodepng_color_mode_equal [35]
+-----------------------------------------------
+                0.00    0.00      24/108         lodepng_deflate [9]
+                0.00    0.00      84/108         generateFixedDistanceTree [20]
+[42]     0.0    0.00    0.00     108         HuffmanTree_cleanup [42]
+-----------------------------------------------
+                0.00    0.00      24/108         lodepng_deflate [9]
+                0.00    0.00      84/108         generateFixedDistanceTree [20]
+[43]     0.0    0.00    0.00     108         HuffmanTree_makeFromLengths2 [43]
+                0.00    0.00     216/240         uivector_resizev.constprop.23 [41]
+-----------------------------------------------
+                0.00    0.00     103/103         decodeGeneric [11]
+[44]     0.0    0.00    0.00     103         lodepng_chunk_type_equals [44]
+-----------------------------------------------
+                0.00    0.00      84/84          generateFixedDistanceTree [20]
+[45]     0.0    0.00    0.00      84         HuffmanTree_makeFromLengths [45]
+-----------------------------------------------
+                0.00    0.00      81/81          decodeGeneric [11]
+[46]     0.0    0.00    0.00      81         lodepng_chunk_check_crc [46]
+-----------------------------------------------
+                0.00    0.00       6/6           dealloc3df [84]
+[47]     0.0    0.00    0.00       6         dealloc2df [47]
+-----------------------------------------------
+                0.00    0.00       5/5           lodepng_info_cleanup [50]
+[48]     0.0    0.00    0.00       5         LodePNGIText_cleanup [48]
+-----------------------------------------------
+                0.00    0.00       5/5           lodepng_info_cleanup [50]
+[49]     0.0    0.00    0.00       5         LodePNGText_cleanup [49]
+-----------------------------------------------
+                0.00    0.00       1/5           lodepng_info_copy [65]
+                0.00    0.00       1/5           lodepng_inspect [66]
+                0.00    0.00       1/5           lodepng_decode_memory [13]
+                0.00    0.00       1/5           lodepng_encode [4]
+                0.00    0.00       1/5           lodepng_encode_memory [5]
+[50]     0.0    0.00    0.00       5         lodepng_info_cleanup [50]
+                0.00    0.00       5/5           LodePNGIText_cleanup [48]
+                0.00    0.00       5/5           LodePNGText_cleanup [49]
+-----------------------------------------------
+                0.00    0.00       1/4           lodepng_inspect [66]
+                0.00    0.00       1/4           lodepng_encode [4]
+                0.00    0.00       2/4           lodepng_state_init [57]
+[51]     0.0    0.00    0.00       4         lodepng_info_init [51]
+-----------------------------------------------
+                0.00    0.00       3/3           lodepng_encode [4]
+[52]     0.0    0.00    0.00       3         addUnknownChunks [52]
+-----------------------------------------------
+                0.00    0.00       1/3           lodepng_inspect [66]
+                0.00    0.00       2/3           lodepng_encode [4]
+[53]     0.0    0.00    0.00       3         checkColorValidity [53]
+-----------------------------------------------
+                0.00    0.00       3/3           lodepng_encode [4]
+[54]     0.0    0.00    0.00       3         lodepng_chunk_create [54]
+                0.00    0.00       3/3           lodepng_chunk_generate_crc [55]
+-----------------------------------------------
+                0.00    0.00       3/3           lodepng_chunk_create [54]
+[55]     0.0    0.00    0.00       3         lodepng_chunk_generate_crc [55]
+-----------------------------------------------
+                0.00    0.00       1/2           lodepng_decode_memory [13]
+                0.00    0.00       1/2           lodepng_encode_memory [5]
+[56]     0.0    0.00    0.00       2         lodepng_state_cleanup [56]
+-----------------------------------------------
+                0.00    0.00       1/2           lodepng_decode_memory [13]
+                0.00    0.00       1/2           lodepng_encode_memory [5]
+[57]     0.0    0.00    0.00       2         lodepng_state_init [57]
+                0.00    0.00       2/4           lodepng_info_init [51]
+-----------------------------------------------
+                0.00    0.00       1/2           lodepng_zlib_decompress [21]
+                0.00    0.00       1/2           lodepng_zlib_compress [7]
+[58]     0.0    0.00    0.00       2         update_adler32.constprop.21 [58]
+-----------------------------------------------
+                                1531             color_tree_cleanup [59]
+                0.00    0.00       1/1           lodepng_auto_choose_color [61]
+[59]     0.0    0.00    0.00       1+1531    color_tree_cleanup [59]
+                                1531             color_tree_cleanup [59]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_convert [64]
+[60]     0.0    0.00    0.00       1         getPixelColorsRGBA8 [60]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_encode [4]
+[61]     0.0    0.00    0.00       1         lodepng_auto_choose_color [61]
+                0.00    0.00     465/465         color_tree_get [37]
+                0.00    0.00     465/465         getPixelColorRGBA8 [38]
+                0.00    0.00     257/257         color_tree_add [40]
+                0.00    0.00       1/1           lodepng_can_have_alpha [62]
+                0.00    0.00       1/1           color_tree_cleanup [59]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_auto_choose_color [61]
+[62]     0.0    0.00    0.00       1         lodepng_can_have_alpha [62]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_info_copy [65]
+[63]     0.0    0.00    0.00       1         lodepng_color_mode_copy [63]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_decode [12]
+[64]     0.0    0.00    0.00       1         lodepng_convert [64]
+                0.00    0.00       1/16625       lodepng_color_mode_equal [35]
+                0.00    0.00       1/1           getPixelColorsRGBA8 [60]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_encode [4]
+[65]     0.0    0.00    0.00       1         lodepng_info_copy [65]
+                0.00    0.00       1/5           lodepng_info_cleanup [50]
+                0.00    0.00       1/1           lodepng_color_mode_copy [63]
+-----------------------------------------------
+                0.00    0.00       1/1           decodeGeneric [11]
+[66]     0.0    0.00    0.00       1         lodepng_inspect [66]
+                0.00    0.00       1/4           lodepng_info_init [51]
+                0.00    0.00       1/5           lodepng_info_cleanup [50]
+                0.00    0.00       1/3           checkColorValidity [53]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_decode_file [14]
+[67]     0.0    0.00    0.00       1         lodepng_load_file [67]
+-----------------------------------------------
+                0.00    0.00       1/1           lodepng_encode_file [6]
+[68]     0.0    0.00    0.00       1         lodepng_save_file [68]
+-----------------------------------------------
+                0.00    0.00       1/1           decodeGeneric [11]
+[69]     0.0    0.00    0.00       1         zlib_decompress [69]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [42] HuffmanTree_cleanup     [3] encodeLZ77             [33] lodepng_huffman_code_lengths
+  [32] HuffmanTree_makeFromFrequencies [36] filterScanline [50] lodepng_info_cleanup
+  [45] HuffmanTree_makeFromLengths [1] fourier_filter     [65] lodepng_info_copy
+  [43] HuffmanTree_makeFromLengths2 [20] generateFixedDistanceTree [51] lodepng_info_init
+  [48] LodePNGIText_cleanup   [29] getHash                [66] lodepng_inspect
+  [49] LodePNGText_cleanup    [38] getPixelColorRGBA8     [67] lodepng_load_file
+  [16] addBitsToStream        [60] getPixelColorsRGBA8    [68] lodepng_save_file
+  [10] addBitsToStreamReversed [24] lodepng_add32bitInt   [56] lodepng_state_cleanup
+  [52] addUnknownChunks       [61] lodepng_auto_choose_color [57] lodepng_state_init
+  [22] alloc1df               [62] lodepng_can_have_alpha  [7] lodepng_zlib_compress
+  [18] alloc2df               [46] lodepng_chunk_check_crc [21] lodepng_zlib_decompress
+  [19] alloc3df               [54] lodepng_chunk_create   [28] ppm_to_png
+  [23] alloc4df               [55] lodepng_chunk_generate_crc [17] preProcessScanlines
+  [34] append_symbol_coins    [44] lodepng_chunk_type_equals [30] searchCodeIndex
+  [53] checkColorValidity     [63] lodepng_color_mode_copy [26] string_set
+  [39] cleanup_coins          [35] lodepng_color_mode_equal [8] ucvector_push_back
+  [40] color_tree_add         [64] lodepng_convert        [25] uivector_push_back
+  [59] color_tree_cleanup     [12] lodepng_decode         [41] uivector_resizev.constprop.23
+  [37] color_tree_get         [13] lodepng_decode_memory  [27] unfilter
+  [47] dealloc2df              [9] lodepng_deflate        [58] update_adler32.constprop.21
+  [11] decodeGeneric           [4] lodepng_encode         [15] zlib_compress
+   [2] discrete_fourier_transform [5] lodepng_encode_memory [69] zlib_decompress
